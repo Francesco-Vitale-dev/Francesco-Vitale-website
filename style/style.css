@@ -1,6 +1,45 @@
-body {
+.body-index {
   height: 2000px;
 }
+
+.portfolio-site {
+  height: 500px;
+}
+
+.about-container {
+  line-height: 25px;
+}
+
+.about {
+  line-height: 25px;
+}
+
+.portfolio-link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.portfolio-link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+
+.me-picture {
+  width: 200px;
+}
+
+.button {
+  border: 1px solid;
+}
+
+
+.linkedin {
+  margin-right: 6px;
+}
+
+
 
 
 
