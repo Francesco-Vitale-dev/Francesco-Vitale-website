@@ -1,3 +1,7 @@
+#myHeader {
+  margin-bottom: 80px; 
+}
+
 @media (min-width: 992px) {
   .navbar-nav {
     margin-left: auto;
@@ -5,5 +9,9 @@
 }
 
 .navbar-brand {
+  font-family: 'Sometype Mono', monospace;
+}
+
+h1 {
   font-family: 'Sometype Mono', monospace;
 }
