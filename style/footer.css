@@ -1,0 +1,27 @@
+.footer {
+  background-color: #f8f9fa;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footerTrademark {
+  text-decoration: none !important;
+  font-family: 'Sometype Mono', monospace;
+  color: black;
+}
+
+.footerLogos {
+  height: 22px; /* Imposta un'altezza fissa per il contenitore dei loghi */
+  display: flex;
+  align-items: center;
+}
+
+
+.footer-picture {
+  width: 22px;
+  margin-right: 13px;
+}
+
+.linkedin-footer, .instagram-footer {
+  text-decoration: none !important;
+}
