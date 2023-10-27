@@ -10,12 +10,10 @@
   color: black;
 }
 
-.footerLogos {
-  height: 22px; /* Imposta un'altezza fissa per il contenitore dei loghi */
-  display: flex;
-  align-items: center;
+.footerTrademark:hover {
+  font-family: 'Sometype Mono', monospace;
+  color: black;
 }
-
 
 .footer-picture {
   width: 22px;
