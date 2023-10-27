@@ -6,12 +6,15 @@
   line-height: 25px;
 }
 
+.resume-link,
 .portfolio-link {
   color: black;
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
 }
 
+.resume-link:hover,
 .portfolio-link:hover {
   color: black;
   text-decoration: underline;
