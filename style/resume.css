@@ -1,0 +1,35 @@
+.problem-solving-btn {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+
+h3 {
+  color: rgb(56, 56, 56);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: italic;
+}
+
+h4 {
+  color: rgb(103, 103, 103);
+  text-decoration: underline;
+}
+
+.personal-website-link, 
+.portfolio-website-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.personal-website-link:hover, 
+.portfolio-website-link:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
