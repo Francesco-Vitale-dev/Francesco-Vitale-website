@@ -1,0 +1,10 @@
+.form-control {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.message {
+  padding-bottom: 150px;
+}

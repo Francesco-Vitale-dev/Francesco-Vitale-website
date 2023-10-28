@@ -7,19 +7,20 @@
 }
 
 .resume-link,
-.portfolio-link {
+.portfolio-link,
+.contact-link {
   color: black;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer;
 }
 
 .resume-link:hover,
-.portfolio-link:hover {
+.portfolio-link:hover,
+.contact-link:hover {
   color: black;
   text-decoration: underline;
 }
-
 
 .me-picture {
   width: 200px;

@@ -14,14 +14,14 @@ h3 {
   font-family: italic;
 }
 
-h4 {
-  color: rgb(103, 103, 103);
-  text-decoration: underline;
+.skills-btn {
+  margin-bottom: 10px;
+  border-radius: 20px;
 }
 
 .personal-website-link, 
 .portfolio-website-link {
-  text-decoration: none;
+  text-decoration: underline;
   color: black;
   font-weight: bold;
   cursor: pointer;
