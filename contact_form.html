@@ -23,6 +23,33 @@
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/resume.css">
     <link rel="stylesheet" href="style/form.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('OUGzqrt-Dy3RVbPXS');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                document.getElementById('confirmation-message').style.display = 'block';
+              
+                // these IDs from the previous steps
+                emailjs.sendForm('service_0e6fqgp', 'template_cuwcyme', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                    setTimeout(function() {
+                        location.reload(); // Aggiorna la pagina dopo l'invio del modulo
+                    }, 1000);
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -60,21 +87,22 @@
 
               <div class="row justify-content-center my-5">
               <div class="col-lg-6">
-                <form>
+                <form id="contact-form">
   
-                  <input class="form-control" type="email" id="email" placeholder="Email">
-                  
-                  <input class="form-control" type="text" id="name" placeholder="Name">
-                  
-                  <input class="form-control" type="text" id="Subject" placeholder="Subject">
-
-                  <input class="form-control message" type="text" id="message" placeholder="Message">
+                  <input class="form-control" type="email" id="email" name="email_id" required placeholder="Email">
+                  <input class="form-control" type="text" id="fullname" name="from_name" required placeholder="Name">
+                  <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject">
+                  <textarea class="form-control message" placeholder="Message" id="message" name="message" required></textarea> 
 
                   <div class="mb-4 text-center">
-                    <button type="submit" class="btn btn-dark">
+                    <button onclick="setTimeout()" type="submit" value="send" class="btn btn-dark">
                       Send Email →
                     </button>
                   </div>
+                  <div id="confirmation-message" style="display: none;">
+                    Thank you!
+                </div>
+                
 
                 </form>
               </div>
